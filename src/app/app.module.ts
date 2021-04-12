@@ -7,6 +7,13 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FooterComponent } from './footer/footer.component';
 import { TabMenuModule } from 'primeng/tabmenu';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { ExperienceComponent } from './dashboard/experience/experience.component';
+import { AboutComponent } from './dashboard/about/about.component';
+import { ProjectsComponent } from './dashboard/projects/projects.component';
+import { HomeComponent } from './dashboard/home/home.component';
+import { SkillsComponent } from './dashboard/skills/skills.component';
+import { ContactComponent } from './dashboard/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +21,18 @@ import { TabMenuModule } from 'primeng/tabmenu';
     SideBarComponent,
     TopBarComponent,
     DashboardComponent,
-    FooterComponent
+    FooterComponent,
+    ExperienceComponent,
+    AboutComponent,
+    ProjectsComponent,
+    HomeComponent,
+    SkillsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    TabMenuModule
+    TabMenuModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent],

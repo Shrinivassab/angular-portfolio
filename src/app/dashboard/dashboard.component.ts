@@ -15,11 +15,12 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.items = [
-      {label: 'Home', icon: 'pi pi-fw pi-home'},
-      {label: 'Calendar', icon: 'pi pi-fw pi-calendar'},
-      {label: 'Edit', icon: 'pi pi-fw pi-pencil'},
-      {label: 'Documentation', icon: 'pi pi-fw pi-file'},
-      {label: 'Settings', icon: 'pi pi-fw pi-cog'}
+      {label: 'Home', icon: 'pi pi-fw pi-home', routerLink: ['./home']},
+      {label: 'Skills', icon: 'pi pi-fw pi-calendar', routerLink: ['./skills']},
+      {label: 'About', icon: 'pi pi-fw pi-pencil', routerLink: ['./about']},
+      {label: 'Projects', icon: 'pi pi-fw pi-file', routerLink: ['./projects']},
+      {label: 'Experience', icon: 'pi pi-fw pi-file', routerLink: ['./experience']},
+      {label: 'Contact', icon: 'pi pi-fw pi-cog', routerLink: ['./contact']}
     ];
 
     this.activeItem = this.items[0];
