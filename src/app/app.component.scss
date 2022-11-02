@@ -1,0 +1,16 @@
+.main-container {
+  background-color: #f1e9e9;
+}
+
+.main-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+app-top-bar {
+  display: flex;
+  width: 100%;
+}
+
