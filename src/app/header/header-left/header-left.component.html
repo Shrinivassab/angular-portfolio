@@ -1,0 +1,23 @@
+<div class="header-left-container">
+  <div class="logo-container" matRipple>
+    <a class="logo-icon" >
+      <nb-icon icon="menu-2"></nb-icon>
+    </a>
+    <a>
+      <p class="logo-font">
+        Shrinivass AB
+      </p>
+    </a>
+  </div>
+
+  <nb-select placeholder="Select Showcase" [(selected)]="selectedItem"
+             (selectedChange)="onThemeSelect($event)"
+             optionsWidth="50">
+    <nb-option value="default">Default</nb-option>
+    <nb-option value="dark">Dark</nb-option>
+    <nb-option value="corporate">Corporate</nb-option>
+    <nb-option value="cosmic">Cosmic</nb-option>
+    <nb-option value="aquamarine">aquamarine</nb-option>
+  </nb-select>
+</div>
+
